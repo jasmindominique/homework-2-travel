@@ -75,12 +75,7 @@ table {
 body {
 	background: #fff;
 	font-family: 'Varela Round', sans serif;
-	color: #3a3a3a;
 	line-height: 1.6;
-}
-
-body img {
-	max-width: 100%;
 }
 
 h2, a {
@@ -102,6 +97,10 @@ h1 {
 	margin: 20px 0 30px;
 }
 
+h1 img {
+	max-width: 80px;
+}
+
 nav li {
 	text-transform: uppercase;
 	text-align: center;
@@ -110,6 +109,8 @@ nav li {
 
 nav a {
 	color: #4894F7;
+	margin: 15px;
+	text-decoration: none;
 }
 
 footer {
@@ -128,16 +129,30 @@ footer {
 	        flex-direction: column;
 }
 
+@media screen and (min-width: 768px) {
+	.main-header {
+		display: -webkit-box;
+		display: flex;
+		-webkit-box-align: center;
+		        align-items: center;
+	}
+}
+
+@media screen and (min-width: 1220px) {
+	.main-header {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		        flex-direction: row;
+		justify-content: space-around;
+	}
+}
+
 .banner {
 	background: url(../img/traveltoo.jpg);
 	height: 375px;
 	text-align: center;
 	padding: 4em;
 	margin-bottom: 50px;
-}
-
-.banner img {
-	width: 190px;
 }
 
 .headline {
@@ -157,12 +172,60 @@ footer {
 	margin: 0 .5em .8em;
 }
 
+.col h2, .col p, .col h3 {
+	text-align: center;
+}
+
+.col h2 {
+	font-size: 2em;
+}
+
+.col h3 {
+	font-size: 1.1em;
+}
+
+.col p {
+	font-size: 3.2em;
+	margin: 30px 0 30px 0;
+}
+
+.col li {
+	list-style-type: square;
+	margin: 10px;
+}
+
+@media screen and (min-width: 768px) {
+	.col {
+		-webkit-box-flex: 1;
+		        flex: 1;
+		display: -webkit-box;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		        flex-direction: column;
+	}
+}
+
+.buttonmargin {
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
 .button {
-	background: #3acec2;
+	background: #4894F7;
 	color: #fff;
 	padding: 15px;
 	border-radius: 7px;
-	margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+	.row, nav ul {
+		display: -webkit-box;
+		display: flex;
+	}
+	.row {
+		margin: 0 1.5em;
+	}
 }
 
 /*# sourceMappingURL=main.css.map */
