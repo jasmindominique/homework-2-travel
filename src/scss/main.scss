@@ -15,6 +15,7 @@ TABLE OF CONTENTS:
 
 /* 0. Reset ================================= */
 @import 'reset';
+@import '_variables';
 
 
 /* 1. Main Layout ================================= */
@@ -24,36 +25,103 @@ TABLE OF CONTENTS:
 }
 
 body {
-	background: #fff;
+	background: $accent-color;
+	font-family: 'Varela Round', sans serif;
+	color: #3a3a3a;
+	line-height: 1.6;
+
+	img{
+	max-width: 100%;
+	}
 }
 
-header{
-
-}
-
-
-/* 2. Content ================================= */
-
-h1{
-
-}
-
-h2{
-
-
-}
-
-h3{
-
-}
-
-nav{
-
+h2, a{
+	color: #093a58;
 }
 
 p{
+	font-size: .9em;
+}
+
+h2{
+	font-size: 1.5em;
+}
+
+
+h1{
+	font-size: 1.35em;
+	font-weight: bold;
+	text-align: center;
+	margin: 20px 0 30px;
+}
+
+nav {
+
+	li{
+	text-transform: uppercase;
+	text-align: center;
+	margin: 20px 0;
+	}
+
+	a{
+	color: $secondary-color;
+	}
 	
 }
+
+
+footer{
+	background: #d9e4ea;
+	text-align: center;
+	padding: 30px;
+	margin-top: 40px;
+}
+
+/* 2. Content ================================= */
+
+.main-header{
+	display: flex;
+	flex-direction: column;
+}
+
+.banner{
+	background: url(../img/traveltoo.jpg)  ;
+	height: 375px;
+	text-align: center;
+	padding: 4em ;
+	margin-bottom: 50px;
+
+	img{
+		width: 190px;
+	}
+}
+
+.headline{
+	color: $primary-color;
+	margin: 30px;
+	font-weight: bold;
+}
+
+.tagline{
+	color: $primary-color;
+}
+
+.col{
+	background: #d9e4ea;
+	padding: 1em;
+	border-radius: 5px;
+	margin: 0 .5em .8em;
+}
+
+.button{
+	background: #3acec2;
+	color: #fff;
+	padding: 15px;
+	border-radius:7px;
+	margin-top: 10px; 
+}
+
+
 
 
 
