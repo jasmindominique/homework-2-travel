@@ -103,6 +103,7 @@ footer{
 
 .banner{
 	background: url(../img/traveltoo.jpg);
+	background-size: cover; 
 	height: 375px;
 	text-align: center;
 	padding: 4em ;
@@ -126,6 +127,7 @@ footer{
 	padding: 1em;
 	border-radius: 5px;
 	margin: 0 .5em .8em;
+	max-width: 100%;
 
 	h2, p, h3, {
 		text-align: center;
@@ -183,10 +185,7 @@ footer{
 		background:$primary-color;
 	}
 
-
-
 }
-
 
 	
 @media screen and (min-width: 768px){
@@ -196,7 +195,7 @@ footer{
 	}
 
 	.row{
-		margin: 0 1.5em;
+		margin: 0 5em;
 	}
 }
 	
