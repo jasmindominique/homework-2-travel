@@ -73,13 +73,15 @@ table {
 }
 
 body {
-	background: #fff;
+	background: #244168;
 	font-family: 'Varela Round', sans serif;
 	line-height: 1.6;
 }
 
-h2, a {
-	color: #093a58;
+a {
+	color: #4894F7;
+	text-decoration: none;
+	font-size: 1.1em;
 }
 
 p {
@@ -87,7 +89,7 @@ p {
 }
 
 h2 {
-	font-size: 1.5em;
+	font-size: 2.3em;
 }
 
 h1 {
@@ -108,7 +110,7 @@ nav li {
 }
 
 nav a {
-	color: #4894F7;
+	color: #fff;
 	margin: 15px;
 	text-decoration: none;
 }
@@ -163,6 +165,7 @@ footer {
 
 .tagline {
 	color: #244168;
+	font-size: 1.2em;
 }
 
 .col {
@@ -178,6 +181,8 @@ footer {
 
 .col h2 {
 	font-size: 2em;
+	-webkit-text-decoration: underline dotted;
+	        text-decoration: underline dotted;
 }
 
 .col h3 {
@@ -185,13 +190,15 @@ footer {
 }
 
 .col p {
-	font-size: 3.2em;
-	margin: 30px 0 30px 0;
+	color: #4894F7;
+	font-size: 3.5em;
+	margin: 30px 0 25px 0;
 }
 
 .col li {
 	list-style-type: square;
-	margin: 10px;
+	margin: 0 10px 0 10px;
+	line-height: 1.8;
 }
 
 @media screen and (min-width: 768px) {
@@ -206,6 +213,10 @@ footer {
 	}
 }
 
+.shadow {
+	box-shadow: 10px 10px 15px #B989CA;
+}
+
 .buttonmargin {
 	margin-top: 30px;
 	margin-bottom: 20px;
@@ -216,6 +227,10 @@ footer {
 	color: #fff;
 	padding: 15px;
 	border-radius: 7px;
+}
+
+.button:hover {
+	background: #244168;
 }
 
 @media screen and (min-width: 768px) {

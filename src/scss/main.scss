@@ -25,14 +25,16 @@ TABLE OF CONTENTS:
 }
 
 body {
-	background: $accent-color;
+	background: $primary-color;
 	font-family: 'Varela Round', sans serif;
 	line-height: 1.6;
 
 }
 
-h2, a{
-	color: #093a58;
+a{
+	color: $secondary-color;
+	text-decoration: none;
+	font-size: 1.1em;
 }
 
 p{
@@ -40,7 +42,7 @@ p{
 }
 
 h2{
-	font-size: 1.5em;
+	font-size: 2.3em;
 }
 
 
@@ -64,7 +66,7 @@ nav {
 	}
 
 	a{
-	color: $secondary-color;
+	color: $accent-color;
 	margin: 15px;
 	text-decoration: none;
 	}
@@ -116,6 +118,7 @@ footer{
 
 .tagline{
 	color: $primary-color;
+	font-size: 1.2em;
 }
 
 .col{
@@ -130,6 +133,7 @@ footer{
 
 	h2{
 		font-size: 2em;
+		text-decoration: underline dotted;
 	}
 
 	h3{
@@ -137,13 +141,16 @@ footer{
 	}
 
 	p{
-		font-size: 3.2em;
-		margin: 30px 0 30px 0;
+		color: $secondary-color;
+		font-size: 3.5em;
+		margin: 30px 0 25px 0;
 	}
 
 	li{
 		list-style-type: square;
-		margin: 10px;
+		margin: 0 10px 0 10px;
+		line-height: 1.8;
+
 	}
 
 	@media screen and (min-width: 768px){
@@ -155,9 +162,15 @@ footer{
 }
 
 
+.shadow{
+		box-shadow: 10px 10px 15px #B989CA;
+
+}
+
 .buttonmargin{
     margin-top: 30px;
     margin-bottom: 20px;
+
 }
 
 .button{
@@ -165,9 +178,17 @@ footer{
 	color: $accent-color;
 	padding: 15px;
 	border-radius:7px;
+
+	&:hover{
+		background:$primary-color;
+	}
+
+
+
 }
 
 
+	
 @media screen and (min-width: 768px){
 
 	.row, nav ul{
