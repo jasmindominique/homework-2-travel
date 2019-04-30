@@ -87,6 +87,8 @@ a {
 	color: #4894F7;
 	text-decoration: none;
 	font-size: 1.1em;
+	-webkit-transform: tr;
+	        transform: tr;
 }
 
 p {
@@ -118,6 +120,13 @@ nav a {
 	color: #fff;
 	margin: 15px;
 	text-decoration: none;
+	background-color: #4894F7;
+	border-radius: .2rem;
+	padding: .3rem;
+	-webkit-transition-property: color;
+	transition-property: color;
+	-webkit-transition-duration: 1s;
+	        transition-duration: 1s;
 }
 
 footer {
@@ -156,13 +165,14 @@ footer {
 
 .banner {
 	background: url(../img/traveltoo.jpg);
-	background-size: cover;
-	height: 375px;
+	background-repeat: none;
+	height: 340px;
 	text-align: center;
 	padding: 4em;
 	margin-bottom: 50px;
 	background-color: #BFE9E6;
 	background-blend-mode: multiply;
+	background-attachment: fixed;
 }
 
 .headline {
@@ -244,6 +254,17 @@ footer {
 
 .button:hover {
 	background: #244168;
+}
+
+.girl {
+	width: 100%;
+	position: absolute;
+	display: -webkit-box;
+	display: flex;
+}
+
+.girl img {
+	width: 100%;
 }
 
 @media screen and (min-width: 768px) {

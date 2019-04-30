@@ -45,6 +45,7 @@ a{
 	color: $secondary-color;
 	text-decoration: none;
 	font-size: 1.1em;
+	transform: tr
 }
 
 p{
@@ -79,6 +80,11 @@ nav {
 	color: $accent-color;
 	margin: 15px;
 	text-decoration: none;
+	background-color:$secondary-color;
+	border-radius: .2rem;
+	padding: .3rem;
+	transition-property: color;
+	transition-duration: 1s;
 	}
 	
 }
@@ -113,13 +119,14 @@ footer{
 
 .banner{
 	background: url(../img/traveltoo.jpg);
-	background-size: cover; 
-	height: 375px;
+	background-repeat: none; 
+	height: 340px;
 	text-align: center;
 	padding: 4em ;
 	margin-bottom: 50px;
 	background-color: #BFE9E6;
 	background-blend-mode: multiply;
+	background-attachment:fixed;
 
 
 }
@@ -200,6 +207,16 @@ footer{
 
 	&:hover{
 		background:$primary-color;
+	}
+
+}
+
+.girl{
+	width: 100%;
+	position: absolute;
+	display: flex;
+	img{
+		width: 100%;
 	}
 
 }
