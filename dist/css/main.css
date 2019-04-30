@@ -78,6 +78,11 @@ body {
 	line-height: 1.6;
 }
 
+header h1 a {
+	font-family: 'Anton', sans-serif;
+	letter-spacing: .3rem;
+}
+
 a {
 	color: #4894F7;
 	text-decoration: none;
@@ -156,17 +161,23 @@ footer {
 	text-align: center;
 	padding: 4em;
 	margin-bottom: 50px;
+	background-color: #BFE9E6;
+	background-blend-mode: multiply;
 }
 
 .headline {
-	color: #244168;
+	color: #FE0109;
 	margin: 30px;
 	font-weight: bold;
+	font-size: 3rem;
+	letter-spacing: .25rem;
+	font-family: 'Anton', sans-serif;
+	mix-blend-mode: screen;
 }
 
 .tagline {
-	color: #244168;
-	font-size: 1.2em;
+	color: #fff;
+	font-size: 1.3em;
 }
 
 .col {
