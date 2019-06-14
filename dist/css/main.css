@@ -78,10 +78,17 @@ body {
 	line-height: 1.6;
 }
 
+header h1 a {
+	font-family: 'Anton', sans-serif;
+	letter-spacing: .3rem;
+}
+
 a {
 	color: #4894F7;
 	text-decoration: none;
 	font-size: 1.1em;
+	-webkit-transform: tr;
+	        transform: tr;
 }
 
 p {
@@ -113,6 +120,18 @@ nav a {
 	color: #fff;
 	margin: 15px;
 	text-decoration: none;
+	background-color: #4894F7;
+	border-radius: .2rem;
+	padding: .3rem;
+	-webkit-transition-property: color;
+	transition-property: color;
+	-webkit-transition-duration: 1s;
+	        transition-duration: 1s;
+}
+
+nav a:hover {
+	-webkit-animation: fontchange 10s infinite ease-in;
+	        animation: fontchange 10s infinite ease-in;
 }
 
 footer {
@@ -151,22 +170,29 @@ footer {
 
 .banner {
 	background: url(../img/traveltoo.jpg);
-	background-size: cover;
-	height: 375px;
+	background-repeat: none;
+	height: 340px;
 	text-align: center;
 	padding: 4em;
 	margin-bottom: 50px;
+	background-color: #BFE9E6;
+	background-blend-mode: multiply;
+	background-attachment: fixed;
 }
 
 .headline {
-	color: #244168;
+	color: #FE0109;
 	margin: 30px;
 	font-weight: bold;
+	font-size: 3rem;
+	letter-spacing: .25rem;
+	font-family: 'Anton', sans-serif;
+	mix-blend-mode: screen;
 }
 
 .tagline {
-	color: #244168;
-	font-size: 1.2em;
+	color: #fff;
+	font-size: 1.3em;
 }
 
 .col {
@@ -215,8 +241,12 @@ footer {
 	}
 }
 
-.shadow {
-	box-shadow: 10px 10px 15px #B989CA;
+.col:hover {
+	-webkit-animation: glow 1s infinite alternate;
+	        animation: glow 1s infinite alternate;
+	-webkit-animation: grow 100s  ease-in;
+	        animation: grow 100s  ease-in;
+	border-radius: 2px solid purple;
 }
 
 .buttonmargin {
@@ -235,6 +265,17 @@ footer {
 	background: #244168;
 }
 
+.girl {
+	width: 100%;
+	position: absolute;
+	display: -webkit-box;
+	display: flex;
+}
+
+.girl img {
+	width: 100%;
+}
+
 @media screen and (min-width: 768px) {
 	.row, nav ul {
 		display: -webkit-box;
@@ -242,6 +283,60 @@ footer {
 	}
 	.row {
 		margin: 0 5em;
+	}
+}
+
+@-webkit-keyframes glow {
+	0% {
+		box-shadow: 0 0 10px -10px #E0FFFF;
+	}
+	100% {
+		box-shadow: 0 0 10px 10px #2B778A;
+	}
+}
+
+@keyframes glow {
+	0% {
+		box-shadow: 0 0 10px -10px #E0FFFF;
+	}
+	100% {
+		box-shadow: 0 0 10px 10px #2B778A;
+	}
+}
+
+@-webkit-keyframes grow {
+	0% {
+		-webkit-transform: scale(1.1);
+		        transform: scale(1.1);
+	}
+	100% {
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+	}
+}
+
+@keyframes grow {
+	0% {
+		-webkit-transform: scale(1.1);
+		        transform: scale(1.1);
+	}
+	100% {
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+	}
+}
+
+@-webkit-keyframes fontchange {
+	0% {
+		color: #00ff00;
+		background-color: #fff;
+	}
+}
+
+@keyframes fontchange {
+	0% {
+		color: #00ff00;
+		background-color: #fff;
 	}
 }
 
