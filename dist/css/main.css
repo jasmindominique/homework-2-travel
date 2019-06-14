@@ -129,6 +129,11 @@ nav a {
 	        transition-duration: 1s;
 }
 
+nav a:hover {
+	-webkit-animation: fontchange 10s infinite ease-in;
+	        animation: fontchange 10s infinite ease-in;
+}
+
 footer {
 	background: #d9e4ea;
 	text-align: center;
@@ -236,8 +241,12 @@ footer {
 	}
 }
 
-.shadow {
-	box-shadow: 10px 10px 15px #B989CA;
+.col:hover {
+	-webkit-animation: glow 1s infinite alternate;
+	        animation: glow 1s infinite alternate;
+	-webkit-animation: grow 100s  ease-in;
+	        animation: grow 100s  ease-in;
+	border-radius: 2px solid purple;
 }
 
 .buttonmargin {
@@ -274,6 +283,60 @@ footer {
 	}
 	.row {
 		margin: 0 5em;
+	}
+}
+
+@-webkit-keyframes glow {
+	0% {
+		box-shadow: 0 0 10px -10px #E0FFFF;
+	}
+	100% {
+		box-shadow: 0 0 10px 10px #2B778A;
+	}
+}
+
+@keyframes glow {
+	0% {
+		box-shadow: 0 0 10px -10px #E0FFFF;
+	}
+	100% {
+		box-shadow: 0 0 10px 10px #2B778A;
+	}
+}
+
+@-webkit-keyframes grow {
+	0% {
+		-webkit-transform: scale(1.1);
+		        transform: scale(1.1);
+	}
+	100% {
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+	}
+}
+
+@keyframes grow {
+	0% {
+		-webkit-transform: scale(1.1);
+		        transform: scale(1.1);
+	}
+	100% {
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+	}
+}
+
+@-webkit-keyframes fontchange {
+	0% {
+		color: #00ff00;
+		background-color: #fff;
+	}
+}
+
+@keyframes fontchange {
+	0% {
+		color: #00ff00;
+		background-color: #fff;
 	}
 }
 
